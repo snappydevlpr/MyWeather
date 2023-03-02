@@ -11,6 +11,7 @@
 		43F99F7829AAC12800BC0A99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F99F7729AAC12800BC0A99 /* ContentView.swift */; };
 		43F99F7A29AAC12B00BC0A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F99F7929AAC12B00BC0A99 /* Assets.xcassets */; };
 		43F99F7D29AAC12B00BC0A99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F99F7C29AAC12B00BC0A99 /* Preview Assets.xcassets */; };
+		43F99F8429B03DC600BC0A99 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F99F8329B03DC600BC0A99 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		43F99F7729AAC12800BC0A99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43F99F7929AAC12B00BC0A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F99F7C29AAC12B00BC0A99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43F99F8329B03DC600BC0A99 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
+		43F99F8529B0427100BC0A99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +56,10 @@
 			children = (
 				43F99F7529AAC12800BC0A99 /* MyWeatherApp.swift */,
 				43F99F7729AAC12800BC0A99 /* ContentView.swift */,
+				43F99F8329B03DC600BC0A99 /* WeatherButton.swift */,
 				43F99F7929AAC12B00BC0A99 /* Assets.xcassets */,
 				43F99F7B29AAC12B00BC0A99 /* Preview Content */,
+				43F99F8529B0427100BC0A99 /* README.md */,
 			);
 			path = MyWeather;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				43F99F7829AAC12800BC0A99 /* ContentView.swift in Sources */,
 				43F99F7629AAC12800BC0A99 /* MyWeatherApp.swift in Sources */,
+				43F99F8429B03DC600BC0A99 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
