@@ -9,30 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isNight = false;
+    var WeeklyWeather = [
+        Weather(day: "Mon",
+                weatherImg: "cloud.sun.fill",
+                temperatureF: 74),
+        Weather(day: "Tue",
+                weatherImg: "cloud.moon.fill",
+                temperatureF: 74),
+        Weather(day: "Wed",
+                weatherImg: "cloud.sun.fill",
+                temperatureF: 74),
+        Weather(day: "Thur",
+                weatherImg: "cloud.sun.fill",
+                temperatureF: 74),
+        Weather(day: "Fri",
+                weatherImg: "cloud.sun.fill",
+                temperatureF: 74)
+        
+    ]
     var body: some View {
         ZStack{
             // goes from the top left to bottom right
+            //MARK: BACKGROUND
             BackgroundView(isNight: $isNight)
+            
             VStack{
+                //MARK: TOP INFO (CITY AND CURRENT WEATHER)
                 CityTextView(cityName: "Dallas, Texas")
                 CurrentWeather(imageName:isNight ? "cloud.moon.fill": "cloud.sun.fill",
                                temperature: 76)
+                
                 HStack(spacing:20){
-                    WeatherDayView(dayOfTheWeek: "TUE",
-                                   imageName: isNight ? "cloud.moon.fill" : "cloud.sun.fill",
-                                   temperature: 74)
-                    WeatherDayView(dayOfTheWeek: "WED",
-                                   imageName: isNight ? "moon.fill" : "sun.max.fill",
-                                   temperature: 88)
-                    WeatherDayView(dayOfTheWeek: "THUR",
-                                   imageName: "wind.snow",
-                                   temperature: 55)
-                    WeatherDayView(dayOfTheWeek: "FRI",
-                                   imageName: isNight ? "cloud.moon.fill" : "cloud.sun.fill",
-                                   temperature: 60)
-                    WeatherDayView(dayOfTheWeek: "SAT",
-                                   imageName: isNight ? "cloud.moon.fill" : "cloud.sun.fill",
-                                   temperature: 25)
+                    ForEach(WeeklyWeather) { weather in
+                        WeatherDayView(dayOfTheWeekWeather: weather)
+                    }
+                   
                 }
                 Spacer()
                 Button{
@@ -56,21 +67,19 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct WeatherDayView: View {
-    var dayOfTheWeek:String
-    var imageName:String
-    var temperature:Int
-    
+    var dayOfTheWeekWeather:Weather
+        
     var body: some View {
         VStack(spacing: 10){
-            Text(dayOfTheWeek)
+            Text(dayOfTheWeekWeather.day)
                 .font(.system(size: 16,weight: .medium))
                 .foregroundColor(.white)
-            Image(systemName: imageName)
+            Image(systemName: dayOfTheWeekWeather.weatherImg)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode:.fit)
                 .frame(width: 40,height: 40)
-            Text("\(temperature)°")
+            Text("\(dayOfTheWeekWeather.temperatureF)°")
                 .font(.system(size: 28,weight: .medium))
                 .foregroundColor(.white)
         }

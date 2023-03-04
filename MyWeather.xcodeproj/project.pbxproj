@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43DDCFEF29B3D8BD0001B4FC /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDCFEE29B3D8BD0001B4FC /* WeatherModel.swift */; };
 		43F99F7629AAC12800BC0A99 /* MyWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F99F7529AAC12800BC0A99 /* MyWeatherApp.swift */; };
 		43F99F7829AAC12800BC0A99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F99F7729AAC12800BC0A99 /* ContentView.swift */; };
 		43F99F7A29AAC12B00BC0A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F99F7929AAC12B00BC0A99 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43DDCFEE29B3D8BD0001B4FC /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		43F99F7229AAC12800BC0A99 /* MyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F99F7529AAC12800BC0A99 /* MyWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeatherApp.swift; sourceTree = "<group>"; };
 		43F99F7729AAC12800BC0A99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				43F99F7529AAC12800BC0A99 /* MyWeatherApp.swift */,
 				43F99F7729AAC12800BC0A99 /* ContentView.swift */,
 				43F99F8329B03DC600BC0A99 /* WeatherButton.swift */,
+				43DDCFEE29B3D8BD0001B4FC /* WeatherModel.swift */,
 				43F99F7929AAC12B00BC0A99 /* Assets.xcassets */,
 				43F99F7B29AAC12B00BC0A99 /* Preview Content */,
 				43F99F8529B0427100BC0A99 /* README.md */,
@@ -144,6 +147,7 @@
 			files = (
 				43F99F7829AAC12800BC0A99 /* ContentView.swift in Sources */,
 				43F99F7629AAC12800BC0A99 /* MyWeatherApp.swift in Sources */,
+				43DDCFEF29B3D8BD0001B4FC /* WeatherModel.swift in Sources */,
 				43F99F8429B03DC600BC0A99 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
